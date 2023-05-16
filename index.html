@@ -4,23 +4,6 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
-    * [lang=x-mobile]{
-      display: none !important;
-    }
-    .pylot-email-wrapper {
-      width: 520px;
-    }
-    @media (max-width:1160px) {
-      * [lang=x-desktop]{
-        display: none !important;
-      }
-      * [lang=x-mobile]{
-        display: block !important;
-      }
-      .pylot-email-wrapper {
-        width: 100%;
-      }
-    }
     .buttons-table {
       width: 100%;
       border-spacing: 0;
@@ -29,10 +12,6 @@
       text-align: right;
     }
     .incidents-table {
-      width: 100%;
-      margin-bottom: 32px;
-    }
-    .incidents-table-mobile {
       width: 100%;
       margin-bottom: 32px;
     }
@@ -108,14 +87,6 @@
       line-height: 20px;
       color: #4A4A49;
     }
-    .detected-incidents-mobile {
-      font-style: normal;
-      font-weight: 600;
-      font-size: 14px;
-      line-height: 20px;
-      color: #4A4A49;
-      margin-bottom: 16px;
-    }
     .header-incident-cell {
       width: 140px;
     }
@@ -165,7 +136,7 @@
       font-size: 14px;
       line-height: 20px;
     }
-    .view-all-incidents-desktop-link, .view-all-incidents-mobile-link {
+    .view-all-incidents-desktop-link {
       text-decoration: none;
     }
     .view-all-incidents-button {
@@ -178,9 +149,6 @@
       font-weight: 600;
       font-size: 14px;
       line-height: 20px;
-    }
-    .view-all-button-wrapper-mobile {
-      margin-bottom: 16px;
     }
   </style>
 </head>
@@ -195,10 +163,6 @@
           <td class="table-right-cell"><a class="view-all-incidents-desktop-link" href="#"><span class="view-all-incidents-button">View all</span></a></td>
         </tr>
       </table>
-    </div>
-    <div lang="x-mobile">
-      <div class="detected-incidents-mobile">Detected incidents</div>
-      <div class="view-all-button-wrapper-mobile"><a class="view-all-incidents-mobile-link" href="#"><span class="view-all-incidents-button">View all</span></a></div>
     </div>
     <div lang="x-desktop">
       <table class="incidents-table" cellpadding="0" cellspacing="0">
@@ -280,95 +244,5 @@
         </tbody>
       </table>
     </div>
-    <div lang="x-mobile">
-      <table class="incidents-table-mobile" cellpadding="0" cellspacing="0">
-        <!-- start block -->
-        <tr>
-          <td>Low HD</td>
-          <td>&nbsp</td>
-        </tr>
-        <tr>
-          <td><div><span class="severity-text">Critical</span>&nbsp;<span class="severity-icon severity-level-1">&nbsp;</span></div></td>
-          <td>&nbsp</td>
-        </tr>
-        <tr>
-          <td><a class="incident-description-link" href="#">Greenhouse A, Climate zone 1 at Jun 2, 01:15–01:15</a></td>
-          <td>
-            <a href="#">
-              <img class="arrow-image" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAVCAYAAACpF6WWAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADzSURBVDhPrdU9DoIwFMDxVmIjG0dwdGRyxoUZj+ANWCSEIzBxFG/gEfQIHsHRUKD2lVolfFha/gnpe4n5RSBRjH5K0zTgx7bdzFNolp39usY3uVq1kieiFPlytM6RJwrD/aOqnB0fN/x6al4QfL5T55nOKY5jj5D1FWPcu0MjdAqE1O3rNgQyxu58f/HRg129KJ3GwLKkB7mKtNEpsCiKz0sTaaFzQOgvOheEJlETEBpFTUFoELUBoR5qC0IddAkQUuhSICTQJUFIoISQwB5kDzm0aJ7nF4zZCWbTb+i69Mh/9KKmYfCX9C1JkggehVwNQ+gNG17EWGfavNgAAAAASUVORK5CYII=" />
-            </a>
-          </td>
-        </tr>
-        <tr>
-          <td><a class="incident-description-link" href="#">Greenhouse A, Climate zone 1 at Jun 2, 01:15–01:15</a></td>
-          <td>
-            <a href="#">
-              <img class="arrow-image" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAVCAYAAACpF6WWAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADzSURBVDhPrdU9DoIwFMDxVmIjG0dwdGRyxoUZj+ANWCSEIzBxFG/gEfQIHsHRUKD2lVolfFha/gnpe4n5RSBRjH5K0zTgx7bdzFNolp39usY3uVq1kieiFPlytM6RJwrD/aOqnB0fN/x6al4QfL5T55nOKY5jj5D1FWPcu0MjdAqE1O3rNgQyxu58f/HRg129KJ3GwLKkB7mKtNEpsCiKz0sTaaFzQOgvOheEJlETEBpFTUFoELUBoR5qC0IddAkQUuhSICTQJUFIoISQwB5kDzm0aJ7nF4zZCWbTb+i69Mh/9KKmYfCX9C1JkggehVwNQ+gNG17EWGfavNgAAAAASUVORK5CYII=" />
-            </a>
-          </td>
-        </tr>
-        <tr>
-          <td><a class="incident-description-link" href="#">Greenhouse A, Climate zone 1 at Jun 2, 01:15–01:15</a></td>
-          <td>
-            <a href="#">
-              <img class="arrow-image" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAVCAYAAACpF6WWAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADzSURBVDhPrdU9DoIwFMDxVmIjG0dwdGRyxoUZj+ANWCSEIzBxFG/gEfQIHsHRUKD2lVolfFha/gnpe4n5RSBRjH5K0zTgx7bdzFNolp39usY3uVq1kieiFPlytM6RJwrD/aOqnB0fN/x6al4QfL5T55nOKY5jj5D1FWPcu0MjdAqE1O3rNgQyxu58f/HRg129KJ3GwLKkB7mKtNEpsCiKz0sTaaFzQOgvOheEJlETEBpFTUFoELUBoR5qC0IddAkQUuhSICTQJUFIoISQwB5kDzm0aJ7nF4zZCWbTb+i69Mh/9KKmYfCX9C1JkggehVwNQ+gNG17EWGfavNgAAAAASUVORK5CYII=" />
-            </a>
-          </td>
-        </tr>
-        <tr>
-          <td><a class="incident-description-link" href="#">Greenhouse A, Climate zone 1 at Jun 2, 01:15–01:15</a></td>
-          <td>
-            <a href="#">
-              <img class="arrow-image" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAVCAYAAACpF6WWAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADzSURBVDhPrdU9DoIwFMDxVmIjG0dwdGRyxoUZj+ANWCSEIzBxFG/gEfQIHsHRUKD2lVolfFha/gnpe4n5RSBRjH5K0zTgx7bdzFNolp39usY3uVq1kieiFPlytM6RJwrD/aOqnB0fN/x6al4QfL5T55nOKY5jj5D1FWPcu0MjdAqE1O3rNgQyxu58f/HRg129KJ3GwLKkB7mKtNEpsCiKz0sTaaFzQOgvOheEJlETEBpFTUFoELUBoR5qC0IddAkQUuhSICTQJUFIoISQwB5kDzm0aJ7nF4zZCWbTb+i69Mh/9KKmYfCX9C1JkggehVwNQ+gNG17EWGfavNgAAAAASUVORK5CYII=" />
-            </a>
-          </td>
-        </tr>
-        <!-- end block -->
-        <!-- start block -->
-        <tr>
-          <td>Low HD</td>
-          <td>&nbsp</td>
-        </tr>
-        <tr>
-          <td><div><span class="severity-text">Critical</span>&nbsp;<span class="severity-icon severity-level-1">&nbsp;</span></div></td>
-          <td>&nbsp</td>
-        </tr>
-        <tr>
-          <td><a class="incident-description-link" href="#">Greenhouse A, Climate zone 1 at Jun 2, 01:15–01:15</a></td>
-          <td>
-            <a href="#">
-              <img class="arrow-image" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAVCAYAAACpF6WWAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADzSURBVDhPrdU9DoIwFMDxVmIjG0dwdGRyxoUZj+ANWCSEIzBxFG/gEfQIHsHRUKD2lVolfFha/gnpe4n5RSBRjH5K0zTgx7bdzFNolp39usY3uVq1kieiFPlytM6RJwrD/aOqnB0fN/x6al4QfL5T55nOKY5jj5D1FWPcu0MjdAqE1O3rNgQyxu58f/HRg129KJ3GwLKkB7mKtNEpsCiKz0sTaaFzQOgvOheEJlETEBpFTUFoELUBoR5qC0IddAkQUuhSICTQJUFIoISQwB5kDzm0aJ7nF4zZCWbTb+i69Mh/9KKmYfCX9C1JkggehVwNQ+gNG17EWGfavNgAAAAASUVORK5CYII=" />
-            </a>
-          </td>
-        </tr>
-        <tr>
-          <td><a class="incident-description-link" href="#">Greenhouse A, Climate zone 1 at Jun 2, 01:15–01:15</a></td>
-          <td>
-            <a href="#">
-              <img class="arrow-image" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAVCAYAAACpF6WWAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADzSURBVDhPrdU9DoIwFMDxVmIjG0dwdGRyxoUZj+ANWCSEIzBxFG/gEfQIHsHRUKD2lVolfFha/gnpe4n5RSBRjH5K0zTgx7bdzFNolp39usY3uVq1kieiFPlytM6RJwrD/aOqnB0fN/x6al4QfL5T55nOKY5jj5D1FWPcu0MjdAqE1O3rNgQyxu58f/HRg129KJ3GwLKkB7mKtNEpsCiKz0sTaaFzQOgvOheEJlETEBpFTUFoELUBoR5qC0IddAkQUuhSICTQJUFIoISQwB5kDzm0aJ7nF4zZCWbTb+i69Mh/9KKmYfCX9C1JkggehVwNQ+gNG17EWGfavNgAAAAASUVORK5CYII=" />
-            </a>
-          </td>
-        </tr>
-        <tr>
-          <td><a class="incident-description-link" href="#">Greenhouse A, Climate zone 1 at Jun 2, 01:15–01:15</a></td>
-          <td>
-            <a href="#">
-              <img class="arrow-image" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAVCAYAAACpF6WWAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADzSURBVDhPrdU9DoIwFMDxVmIjG0dwdGRyxoUZj+ANWCSEIzBxFG/gEfQIHsHRUKD2lVolfFha/gnpe4n5RSBRjH5K0zTgx7bdzFNolp39usY3uVq1kieiFPlytM6RJwrD/aOqnB0fN/x6al4QfL5T55nOKY5jj5D1FWPcu0MjdAqE1O3rNgQyxu58f/HRg129KJ3GwLKkB7mKtNEpsCiKz0sTaaFzQOgvOheEJlETEBpFTUFoELUBoR5qC0IddAkQUuhSICTQJUFIoISQwB5kDzm0aJ7nF4zZCWbTb+i69Mh/9KKmYfCX9C1JkggehVwNQ+gNG17EWGfavNgAAAAASUVORK5CYII=" />
-            </a>
-          </td>
-        </tr>
-        <tr>
-          <td><a class="incident-description-link" href="#">Greenhouse A, Climate zone 1 at Jun 2, 01:15–01:15</a></td>
-          <td>
-            <a href="#">
-              <img class="arrow-image" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAVCAYAAACpF6WWAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADzSURBVDhPrdU9DoIwFMDxVmIjG0dwdGRyxoUZj+ANWCSEIzBxFG/gEfQIHsHRUKD2lVolfFha/gnpe4n5RSBRjH5K0zTgx7bdzFNolp39usY3uVq1kieiFPlytM6RJwrD/aOqnB0fN/x6al4QfL5T55nOKY5jj5D1FWPcu0MjdAqE1O3rNgQyxu58f/HRg129KJ3GwLKkB7mKtNEpsCiKz0sTaaFzQOgvOheEJlETEBpFTUFoELUBoR5qC0IddAkQUuhSICTQJUFIoISQwB5kDzm0aJ7nF4zZCWbTb+i69Mh/9KKmYfCX9C1JkggehVwNQ+gNG17EWGfavNgAAAAASUVORK5CYII=" />
-            </a>
-          </td>
-        </tr>
-        <!-- end block -->
-      </table>
-    </div>
-    <div class="regards-text">Regards, <br/>The PYLOT team</div>
-  </div>
 </body>
 </html>
