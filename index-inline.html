@@ -1,0 +1,230 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+* [lang=x-mobile]{
+  display: none !important;
+}
+* [lang=x-desktop] {
+  display: block !important;
+}
+.pylot-email-wrapper {
+  width: 520px;
+}
+@media (max-width:1160px) {
+  * [lang=x-desktop] {
+    display: none !important;
+  }
+
+  * [lang=x-mobile] {
+    display: block !important;
+  }
+
+  .pylot-email-wrapper {
+    width: 100%;
+  }
+}
+.incident-description-link {
+  color: #4A4A49;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+}
+.view-all-incidents-desktop-link,
+.view-all-incidents-mobile-link {
+  text-decoration: none;
+}
+</style>
+</head>
+<body>
+  <div class="pylot-email-wrapper" style="width: 520px;">
+    <div class="hello-title" style="margin-bottom: 16px; font-style: normal; font-weight: 400; font-size: 14px; line-height: 20px;">Hello,</div>
+    <div class="hello-description" style="margin-bottom: 32px; font-style: normal; font-weight: 400; font-size: 14px; line-height: 20px;">10 new incidents has just been detected.</div>
+    <div lang="x-desktop" class="desktop-buttons" style="margin-bottom: 16px;">
+      <table class="buttons-table" style="width: 100%; border-spacing: 0;" width="100%">
+        <tr>
+          <td class="detected-incidents-desktop" style="font-style: normal; font-weight: 600; font-size: 14px; line-height: 20px; color: #4A4A49;">Detected incidents</td>
+          <td class="table-right-cell" style="text-align: right;" align="right"><a class="view-all-incidents-desktop-link" href="#" style="text-decoration: none;"><span class="view-all-incidents-button" style="height: 32px; background: #1DBADF; border-radius: 4px; padding: 4px 16px; color: #FFFFFF; font-style: normal; font-weight: 600; font-size: 14px; line-height: 20px;">View all</span></a></td>
+        </tr>
+      </table>
+    </div>
+    <div lang="x-mobile" style="display: none;">
+      <div class="detected-incidents-mobile" style="font-style: normal; font-weight: 600; font-size: 14px; line-height: 20px; color: #4A4A49; margin-bottom: 16px;">Detected incidents</div>
+      <div class="view-all-button-wrapper-mobile" style="margin-bottom: 16px;"><a class="view-all-incidents-mobile-link" href="#" style="text-decoration: none;"><span class="view-all-incidents-button" style="height: 32px; background: #1DBADF; border-radius: 4px; padding: 4px 16px; color: #FFFFFF; font-style: normal; font-weight: 600; font-size: 14px; line-height: 20px;">View all</span></a></div>
+    </div>
+    <div lang="x-desktop">
+      <table class="incidents-table" cellpadding="0" cellspacing="0" style="width: 100%; margin-bottom: 32px;" width="100%">
+        <thead>
+        <tr>
+          <th class="incidents-table_header_cell left-border left-top-border-radius incidents-table_header-delimiter" style="width: 24px; background-color: #EFF2F4; border-top: 1px solid #E7E9EE; border-bottom: 1px solid #E7E9EE; text-align: left; border-left: 1px solid #E7E9EE; border-top-left-radius: 4px;" width="24" bgcolor="#EFF2F4" align="left"></th>
+          <th class="incidents-table_header_cell header-content-cell header-incident-cell" style="background-color: #EFF2F4; border-top: 1px solid #E7E9EE; border-bottom: 1px solid #E7E9EE; text-align: left; padding: 10px 0; color: #777776; font-style: normal; font-weight: 600; font-size: 14px; line-height: 20px; width: 140px;" width="140" bgcolor="#EFF2F4" align="left">Incident</th>
+          <th class="incidents-table_header_cell incidents-table_header-delimiter" style="width: 24px; background-color: #EFF2F4; border-top: 1px solid #E7E9EE; border-bottom: 1px solid #E7E9EE; text-align: left;" width="24" bgcolor="#EFF2F4" align="left"></th>
+          <th class="incidents-table_header_cell header-content-cell header-severity-cell" style="background-color: #EFF2F4; border-top: 1px solid #E7E9EE; border-bottom: 1px solid #E7E9EE; text-align: left; padding: 10px 0; color: #777776; font-style: normal; font-weight: 600; font-size: 14px; line-height: 20px; width: 70px;" width="70" bgcolor="#EFF2F4" align="left">Severity </th>
+          <th class="incidents-table_header_cell incidents-table_header-delimiter" style="width: 24px; background-color: #EFF2F4; border-top: 1px solid #E7E9EE; border-bottom: 1px solid #E7E9EE; text-align: left;" width="24" bgcolor="#EFF2F4" align="left"></th>
+          <th class="incidents-table_header_cell header-content-cell" style="background-color: #EFF2F4; border-top: 1px solid #E7E9EE; border-bottom: 1px solid #E7E9EE; text-align: left; padding: 10px 0; color: #777776; font-style: normal; font-weight: 600; font-size: 14px; line-height: 20px;" bgcolor="#EFF2F4" align="left">Location and time</th>
+          <th class="incidents-table_header_cell incidents-table_header-delimiter" style="width: 24px; background-color: #EFF2F4; border-top: 1px solid #E7E9EE; border-bottom: 1px solid #E7E9EE; text-align: left;" width="24" bgcolor="#EFF2F4" align="left"></th>
+          <th class="incidents-table_header_cell" style="background-color: #EFF2F4; border-top: 1px solid #E7E9EE; border-bottom: 1px solid #E7E9EE; text-align: left;" bgcolor="#EFF2F4" align="left">&nbsp;</th>
+          <th class="incidents-table_header_cell header-content-cell right-border right-top-border-radius incidents-table_header-delimiter" style="width: 24px; background-color: #EFF2F4; border-top: 1px solid #E7E9EE; border-bottom: 1px solid #E7E9EE; text-align: left; border-right: 1px solid #E7E9EE; border-top-right-radius: 4px; padding: 10px 0; color: #777776; font-style: normal; font-weight: 600; font-size: 14px; line-height: 20px;" width="24" bgcolor="#EFF2F4" align="left"></th>
+        </tr>
+        </thead>
+        <tbody>
+        <!-- start block -->
+        <tr>
+          <td class="left-border" style="border-left: 1px solid #E7E9EE;">&nbsp;</td>
+          <td class="bottom-border incident-name text-align-top table-content-cell-first" rowspan="4" style="border-bottom: 1px solid #E7E9EE; vertical-align: top; padding: 16px 0 8px; font-style: normal; font-weight: 400; font-size: 14px; line-height: 20px;" valign="top">Low HD</td> <!-- set from template engine --> <!-- set `bottom-border` from template engine -->
+          <td>&nbsp;</td>
+          <td class="text-align-top table-content-cell-first" rowspan="2" style="vertical-align: top; padding: 16px 0 8px;" valign="top">
+            <div><span class="severity-text" style="vertical-align: middle; font-style: normal; font-weight: 400; font-size: 14px; line-height: 20px;">Critical</span>&nbsp;<span class="severity-icon severity-level-1" style="width: 8px; height: 8px; border-radius: 4px; display: inline-block; vertical-align: middle; background-color: #990515;">&nbsp;</span></div>
+          </td> <!-- set from template engine -->
+          <td>&nbsp;</td>
+          <td class="text-align-top table-content-cell-first" style="vertical-align: top; padding: 16px 0 8px;" valign="top"><a class="incident-description-link" href="#" style="color: #4A4A49; text-decoration: none; font-style: normal; font-weight: 400; font-size: 14px; line-height: 20px;">Greenhouse A, Climate zone 1 at Jun 2, 01:15–01:15</a></td>
+          <td>&nbsp;</td>
+          <td class="text-align-top table-content-cell-first" style="vertical-align: top; padding: 16px 0 8px;" valign="top">
+            <a href="#">
+              <img class="arrow-image" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAVCAYAAACpF6WWAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADzSURBVDhPrdU9DoIwFMDxVmIjG0dwdGRyxoUZj+ANWCSEIzBxFG/gEfQIHsHRUKD2lVolfFha/gnpe4n5RSBRjH5K0zTgx7bdzFNolp39usY3uVq1kieiFPlytM6RJwrD/aOqnB0fN/x6al4QfL5T55nOKY5jj5D1FWPcu0MjdAqE1O3rNgQyxu58f/HRg129KJ3GwLKkB7mKtNEpsCiKz0sTaaFzQOgvOheEJlETEBpFTUFoELUBoR5qC0IddAkQUuhSICTQJUFIoISQwB5kDzm0aJ7nF4zZCWbTb+i69Mh/9KKmYfCX9C1JkggehVwNQ+gNG17EWGfavNgAAAAASUVORK5CYII=" style="width: 10px; height: 10px;" width="10" height="10">
+            </a>
+          </td>
+          <td class="right-border" style="border-right: 1px solid #E7E9EE;">&nbsp;</td>
+        </tr>
+        <tr>
+          <td class="left-border" style="border-left: 1px solid #E7E9EE;">&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td class="text-align-top table-content-cell" style="vertical-align: top; padding: 8px 0 8px;" valign="top"><a class="incident-description-link" href="#" style="color: #4A4A49; text-decoration: none; font-style: normal; font-weight: 400; font-size: 14px; line-height: 20px;">Greenhouse A, Climate zone 1 at Jun 2, 01:15–01:15</a></td>
+          <td>&nbsp;</td>
+          <td class="text-align-top table-content-cell" style="vertical-align: top; padding: 8px 0 8px;" valign="top">
+            <a href="#">
+              <img class="arrow-image" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAVCAYAAACpF6WWAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADzSURBVDhPrdU9DoIwFMDxVmIjG0dwdGRyxoUZj+ANWCSEIzBxFG/gEfQIHsHRUKD2lVolfFha/gnpe4n5RSBRjH5K0zTgx7bdzFNolp39usY3uVq1kieiFPlytM6RJwrD/aOqnB0fN/x6al4QfL5T55nOKY5jj5D1FWPcu0MjdAqE1O3rNgQyxu58f/HRg129KJ3GwLKkB7mKtNEpsCiKz0sTaaFzQOgvOheEJlETEBpFTUFoELUBoR5qC0IddAkQUuhSICTQJUFIoISQwB5kDzm0aJ7nF4zZCWbTb+i69Mh/9KKmYfCX9C1JkggehVwNQ+gNG17EWGfavNgAAAAASUVORK5CYII=" style="width: 10px; height: 10px;" width="10" height="10">
+            </a>
+          </td>
+          <td class="right-border" style="border-right: 1px solid #E7E9EE;">&nbsp;</td>
+        </tr>
+        <!-- end block -->
+        <!-- start block -->
+        <tr>
+          <td class="left-border" style="border-left: 1px solid #E7E9EE;">&nbsp;</td>
+          <td>&nbsp;</td>
+          <td class="bottom-border text-align-top table-content-cell" rowspan="2" style="border-bottom: 1px solid #E7E9EE; vertical-align: top; padding: 8px 0 8px;" valign="top"><span class="severity-text" style="vertical-align: middle; font-style: normal; font-weight: 400; font-size: 14px; line-height: 20px;">Critical</span>&nbsp;<span class="severity-icon severity-level-1" style="width: 8px; height: 8px; border-radius: 4px; display: inline-block; vertical-align: middle; background-color: #990515;">&nbsp;</span></td> <!-- set `bottom-border` from template engine -->
+          <td>&nbsp;</td>
+          <td class="text-align-top table-content-cell" style="vertical-align: top; padding: 8px 0 8px;" valign="top"><a class="incident-description-link" href="#" style="color: #4A4A49; text-decoration: none; font-style: normal; font-weight: 400; font-size: 14px; line-height: 20px;">Greenhouse A, Climate zone 1 at Jun 2, 01:15–01:15</a></td>
+          <td>&nbsp;</td>
+          <td class="text-align-top table-content-cell" style="vertical-align: top; padding: 8px 0 8px;" valign="top">
+            <a href="#">
+              <img class="arrow-image" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAVCAYAAACpF6WWAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADzSURBVDhPrdU9DoIwFMDxVmIjG0dwdGRyxoUZj+ANWCSEIzBxFG/gEfQIHsHRUKD2lVolfFha/gnpe4n5RSBRjH5K0zTgx7bdzFNolp39usY3uVq1kieiFPlytM6RJwrD/aOqnB0fN/x6al4QfL5T55nOKY5jj5D1FWPcu0MjdAqE1O3rNgQyxu58f/HRg129KJ3GwLKkB7mKtNEpsCiKz0sTaaFzQOgvOheEJlETEBpFTUFoELUBoR5qC0IddAkQUuhSICTQJUFIoISQwB5kDzm0aJ7nF4zZCWbTb+i69Mh/9KKmYfCX9C1JkggehVwNQ+gNG17EWGfavNgAAAAASUVORK5CYII=" style="width: 10px; height: 10px;" width="10" height="10">
+            </a>
+          </td>
+          <td class="right-border" style="border-right: 1px solid #E7E9EE;">&nbsp;</td>
+        </tr>
+        <tr>
+          <td class="left-border left-bottom-border-radius bottom-border" style="border-left: 1px solid #E7E9EE; border-bottom-left-radius: 4px; border-bottom: 1px solid #E7E9EE;">&nbsp;</td>
+          <td class="bottom-border" style="border-bottom: 1px solid #E7E9EE;">&nbsp;</td>
+          <td class="bottom-border" style="border-bottom: 1px solid #E7E9EE;">&nbsp;</td>
+          <td class="bottom-border text-align-top table-content-cell-last" style="border-bottom: 1px solid #E7E9EE; vertical-align: top; padding: 8px 0 16px;" valign="top"><a class="incident-description-link" href="#" style="color: #4A4A49; text-decoration: none; font-style: normal; font-weight: 400; font-size: 14px; line-height: 20px;">Greenhouse A, Climate zone 1 at Jun 2, 01:15–01:15</a></td>
+          <td class="bottom-border" style="border-bottom: 1px solid #E7E9EE;">&nbsp;</td>
+          <td class="bottom-border text-align-top table-content-cell-last" style="border-bottom: 1px solid #E7E9EE; vertical-align: top; padding: 8px 0 16px;" valign="top">
+            <a href="#">
+              <img class="arrow-image" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAVCAYAAACpF6WWAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADzSURBVDhPrdU9DoIwFMDxVmIjG0dwdGRyxoUZj+ANWCSEIzBxFG/gEfQIHsHRUKD2lVolfFha/gnpe4n5RSBRjH5K0zTgx7bdzFNolp39usY3uVq1kieiFPlytM6RJwrD/aOqnB0fN/x6al4QfL5T55nOKY5jj5D1FWPcu0MjdAqE1O3rNgQyxu58f/HRg129KJ3GwLKkB7mKtNEpsCiKz0sTaaFzQOgvOheEJlETEBpFTUFoELUBoR5qC0IddAkQUuhSICTQJUFIoISQwB5kDzm0aJ7nF4zZCWbTb+i69Mh/9KKmYfCX9C1JkggehVwNQ+gNG17EWGfavNgAAAAASUVORK5CYII=" style="width: 10px; height: 10px;" width="10" height="10">
+            </a>
+          </td>
+          <td class="right-border right-bottom-border-radius bottom-border" style="border-right: 1px solid #E7E9EE; border-bottom-right-radius: 4px; border-bottom: 1px solid #E7E9EE;">&nbsp;</td>
+        </tr>
+        <!-- end block -->
+        </tbody>
+      </table>
+    </div>
+    <div lang="x-mobile" style="display: none;">
+      <table class="incidents-table-mobile" cellpadding="0" cellspacing="0" style="width: 100%; margin-bottom: 32px;" width="100%">
+        <!-- start block -->
+        <tr>
+          <td>Low HD</td>
+          <td>&nbsp</td>
+        </tr>
+        <tr>
+          <td><div><span class="severity-text" style="vertical-align: middle; font-style: normal; font-weight: 400; font-size: 14px; line-height: 20px;">Critical</span>&nbsp;<span class="severity-icon severity-level-1" style="width: 8px; height: 8px; border-radius: 4px; display: inline-block; vertical-align: middle; background-color: #990515;">&nbsp;</span></div></td>
+          <td>&nbsp</td>
+        </tr>
+        <tr>
+          <td><a class="incident-description-link" href="#" style="color: #4A4A49; text-decoration: none; font-style: normal; font-weight: 400; font-size: 14px; line-height: 20px;">Greenhouse A, Climate zone 1 at Jun 2, 01:15–01:15</a></td>
+          <td>
+            <a href="#">
+              <img class="arrow-image" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAVCAYAAACpF6WWAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADzSURBVDhPrdU9DoIwFMDxVmIjG0dwdGRyxoUZj+ANWCSEIzBxFG/gEfQIHsHRUKD2lVolfFha/gnpe4n5RSBRjH5K0zTgx7bdzFNolp39usY3uVq1kieiFPlytM6RJwrD/aOqnB0fN/x6al4QfL5T55nOKY5jj5D1FWPcu0MjdAqE1O3rNgQyxu58f/HRg129KJ3GwLKkB7mKtNEpsCiKz0sTaaFzQOgvOheEJlETEBpFTUFoELUBoR5qC0IddAkQUuhSICTQJUFIoISQwB5kDzm0aJ7nF4zZCWbTb+i69Mh/9KKmYfCX9C1JkggehVwNQ+gNG17EWGfavNgAAAAASUVORK5CYII=" style="width: 10px; height: 10px;" width="10" height="10">
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <td><a class="incident-description-link" href="#" style="color: #4A4A49; text-decoration: none; font-style: normal; font-weight: 400; font-size: 14px; line-height: 20px;">Greenhouse A, Climate zone 1 at Jun 2, 01:15–01:15</a></td>
+          <td>
+            <a href="#">
+              <img class="arrow-image" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAVCAYAAACpF6WWAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADzSURBVDhPrdU9DoIwFMDxVmIjG0dwdGRyxoUZj+ANWCSEIzBxFG/gEfQIHsHRUKD2lVolfFha/gnpe4n5RSBRjH5K0zTgx7bdzFNolp39usY3uVq1kieiFPlytM6RJwrD/aOqnB0fN/x6al4QfL5T55nOKY5jj5D1FWPcu0MjdAqE1O3rNgQyxu58f/HRg129KJ3GwLKkB7mKtNEpsCiKz0sTaaFzQOgvOheEJlETEBpFTUFoELUBoR5qC0IddAkQUuhSICTQJUFIoISQwB5kDzm0aJ7nF4zZCWbTb+i69Mh/9KKmYfCX9C1JkggehVwNQ+gNG17EWGfavNgAAAAASUVORK5CYII=" style="width: 10px; height: 10px;" width="10" height="10">
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <td><a class="incident-description-link" href="#" style="color: #4A4A49; text-decoration: none; font-style: normal; font-weight: 400; font-size: 14px; line-height: 20px;">Greenhouse A, Climate zone 1 at Jun 2, 01:15–01:15</a></td>
+          <td>
+            <a href="#">
+              <img class="arrow-image" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAVCAYAAACpF6WWAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADzSURBVDhPrdU9DoIwFMDxVmIjG0dwdGRyxoUZj+ANWCSEIzBxFG/gEfQIHsHRUKD2lVolfFha/gnpe4n5RSBRjH5K0zTgx7bdzFNolp39usY3uVq1kieiFPlytM6RJwrD/aOqnB0fN/x6al4QfL5T55nOKY5jj5D1FWPcu0MjdAqE1O3rNgQyxu58f/HRg129KJ3GwLKkB7mKtNEpsCiKz0sTaaFzQOgvOheEJlETEBpFTUFoELUBoR5qC0IddAkQUuhSICTQJUFIoISQwB5kDzm0aJ7nF4zZCWbTb+i69Mh/9KKmYfCX9C1JkggehVwNQ+gNG17EWGfavNgAAAAASUVORK5CYII=" style="width: 10px; height: 10px;" width="10" height="10">
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <td><a class="incident-description-link" href="#" style="color: #4A4A49; text-decoration: none; font-style: normal; font-weight: 400; font-size: 14px; line-height: 20px;">Greenhouse A, Climate zone 1 at Jun 2, 01:15–01:15</a></td>
+          <td>
+            <a href="#">
+              <img class="arrow-image" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAVCAYAAACpF6WWAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADzSURBVDhPrdU9DoIwFMDxVmIjG0dwdGRyxoUZj+ANWCSEIzBxFG/gEfQIHsHRUKD2lVolfFha/gnpe4n5RSBRjH5K0zTgx7bdzFNolp39usY3uVq1kieiFPlytM6RJwrD/aOqnB0fN/x6al4QfL5T55nOKY5jj5D1FWPcu0MjdAqE1O3rNgQyxu58f/HRg129KJ3GwLKkB7mKtNEpsCiKz0sTaaFzQOgvOheEJlETEBpFTUFoELUBoR5qC0IddAkQUuhSICTQJUFIoISQwB5kDzm0aJ7nF4zZCWbTb+i69Mh/9KKmYfCX9C1JkggehVwNQ+gNG17EWGfavNgAAAAASUVORK5CYII=" style="width: 10px; height: 10px;" width="10" height="10">
+            </a>
+          </td>
+        </tr>
+        <!-- end block -->
+        <!-- start block -->
+        <tr>
+          <td>Low HD</td>
+          <td>&nbsp</td>
+        </tr>
+        <tr>
+          <td><div><span class="severity-text" style="vertical-align: middle; font-style: normal; font-weight: 400; font-size: 14px; line-height: 20px;">Critical</span>&nbsp;<span class="severity-icon severity-level-1" style="width: 8px; height: 8px; border-radius: 4px; display: inline-block; vertical-align: middle; background-color: #990515;">&nbsp;</span></div></td>
+          <td>&nbsp</td>
+        </tr>
+        <tr>
+          <td><a class="incident-description-link" href="#" style="color: #4A4A49; text-decoration: none; font-style: normal; font-weight: 400; font-size: 14px; line-height: 20px;">Greenhouse A, Climate zone 1 at Jun 2, 01:15–01:15</a></td>
+          <td>
+            <a href="#">
+              <img class="arrow-image" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAVCAYAAACpF6WWAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADzSURBVDhPrdU9DoIwFMDxVmIjG0dwdGRyxoUZj+ANWCSEIzBxFG/gEfQIHsHRUKD2lVolfFha/gnpe4n5RSBRjH5K0zTgx7bdzFNolp39usY3uVq1kieiFPlytM6RJwrD/aOqnB0fN/x6al4QfL5T55nOKY5jj5D1FWPcu0MjdAqE1O3rNgQyxu58f/HRg129KJ3GwLKkB7mKtNEpsCiKz0sTaaFzQOgvOheEJlETEBpFTUFoELUBoR5qC0IddAkQUuhSICTQJUFIoISQwB5kDzm0aJ7nF4zZCWbTb+i69Mh/9KKmYfCX9C1JkggehVwNQ+gNG17EWGfavNgAAAAASUVORK5CYII=" style="width: 10px; height: 10px;" width="10" height="10">
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <td><a class="incident-description-link" href="#" style="color: #4A4A49; text-decoration: none; font-style: normal; font-weight: 400; font-size: 14px; line-height: 20px;">Greenhouse A, Climate zone 1 at Jun 2, 01:15–01:15</a></td>
+          <td>
+            <a href="#">
+              <img class="arrow-image" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAVCAYAAACpF6WWAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADzSURBVDhPrdU9DoIwFMDxVmIjG0dwdGRyxoUZj+ANWCSEIzBxFG/gEfQIHsHRUKD2lVolfFha/gnpe4n5RSBRjH5K0zTgx7bdzFNolp39usY3uVq1kieiFPlytM6RJwrD/aOqnB0fN/x6al4QfL5T55nOKY5jj5D1FWPcu0MjdAqE1O3rNgQyxu58f/HRg129KJ3GwLKkB7mKtNEpsCiKz0sTaaFzQOgvOheEJlETEBpFTUFoELUBoR5qC0IddAkQUuhSICTQJUFIoISQwB5kDzm0aJ7nF4zZCWbTb+i69Mh/9KKmYfCX9C1JkggehVwNQ+gNG17EWGfavNgAAAAASUVORK5CYII=" style="width: 10px; height: 10px;" width="10" height="10">
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <td><a class="incident-description-link" href="#" style="color: #4A4A49; text-decoration: none; font-style: normal; font-weight: 400; font-size: 14px; line-height: 20px;">Greenhouse A, Climate zone 1 at Jun 2, 01:15–01:15</a></td>
+          <td>
+            <a href="#">
+              <img class="arrow-image" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAVCAYAAACpF6WWAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADzSURBVDhPrdU9DoIwFMDxVmIjG0dwdGRyxoUZj+ANWCSEIzBxFG/gEfQIHsHRUKD2lVolfFha/gnpe4n5RSBRjH5K0zTgx7bdzFNolp39usY3uVq1kieiFPlytM6RJwrD/aOqnB0fN/x6al4QfL5T55nOKY5jj5D1FWPcu0MjdAqE1O3rNgQyxu58f/HRg129KJ3GwLKkB7mKtNEpsCiKz0sTaaFzQOgvOheEJlETEBpFTUFoELUBoR5qC0IddAkQUuhSICTQJUFIoISQwB5kDzm0aJ7nF4zZCWbTb+i69Mh/9KKmYfCX9C1JkggehVwNQ+gNG17EWGfavNgAAAAASUVORK5CYII=" style="width: 10px; height: 10px;" width="10" height="10">
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <td><a class="incident-description-link" href="#" style="color: #4A4A49; text-decoration: none; font-style: normal; font-weight: 400; font-size: 14px; line-height: 20px;">Greenhouse A, Climate zone 1 at Jun 2, 01:15–01:15</a></td>
+          <td>
+            <a href="#">
+              <img class="arrow-image" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAVCAYAAACpF6WWAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADzSURBVDhPrdU9DoIwFMDxVmIjG0dwdGRyxoUZj+ANWCSEIzBxFG/gEfQIHsHRUKD2lVolfFha/gnpe4n5RSBRjH5K0zTgx7bdzFNolp39usY3uVq1kieiFPlytM6RJwrD/aOqnB0fN/x6al4QfL5T55nOKY5jj5D1FWPcu0MjdAqE1O3rNgQyxu58f/HRg129KJ3GwLKkB7mKtNEpsCiKz0sTaaFzQOgvOheEJlETEBpFTUFoELUBoR5qC0IddAkQUuhSICTQJUFIoISQwB5kDzm0aJ7nF4zZCWbTb+i69Mh/9KKmYfCX9C1JkggehVwNQ+gNG17EWGfavNgAAAAASUVORK5CYII=" style="width: 10px; height: 10px;" width="10" height="10">
+            </a>
+          </td>
+        </tr>
+        <!-- end block -->
+      </table>
+    </div>
+    <div class="regards-text" style="font-style: normal; font-weight: 400; font-size: 14px; line-height: 20px;">Regards, <br>The PYLOT team</div>
+  </div>
+</body>
+</html>

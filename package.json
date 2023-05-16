@@ -1,0 +1,10 @@
+{
+  "name": "pylot_alert_mail",
+  "version": "1.0.0",
+  "devDependencies": {
+    "juice": "^9.0.0"
+  },
+  "scripts": {
+    "inline": "juice index.html index-inline.html"
+  }
+}
