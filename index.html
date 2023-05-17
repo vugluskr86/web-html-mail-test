@@ -14,6 +14,7 @@
     .incidents-table {
       width: 100%;
       margin-bottom: 32px;
+      text-align: left;
     }
     .incidents-table_header-delimiter {
       width: 24px;
@@ -69,6 +70,8 @@
       font-weight: 400;
       font-size: 14px;
       line-height: 20px;
+      width: 100%;
+      text-align: left;
     }
     .hello-description {
       margin-bottom: 32px;
@@ -76,9 +79,13 @@
       font-weight: 400;
       font-size: 14px;
       line-height: 20px;
+      width: 100%;
+      text-align: left;
     }
     .desktop-buttons {
       margin-bottom: 16px;
+      width: 100%;
+      text-align: left;
     }
     .detected-incidents-desktop {
       font-style: normal;
@@ -89,7 +96,7 @@
     }
     .header-incident-cell {
       width: 140px;
-    }
+      }
     .table-content-cell-first {
       padding: 16px 0 8px;
     }
@@ -121,6 +128,7 @@
       font-weight: 400;
       font-size: 14px;
       line-height: 20px;
+      text-align: left;
     }
     .incident-description-link {
       color: #4A4A49;
@@ -150,10 +158,22 @@
       font-size: 14px;
       line-height: 20px;
     }
+    .pylot-email-wrapper {
+      width: 520px;
+      margin: 0 auto;
+    }
+    body {
+      text-align: center;
+    }
+    .pylot-logo {
+      width:105px;
+      margin-bottom: 32px;
+    }
   </style>
 </head>
 <body>
   <div class="pylot-email-wrapper">
+    <img class="pylot-logo" src="data:image/png;base64,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" />
     <div class="hello-title">Hello,</div>
     <div class="hello-description">10 new incidents has just been detected.</div>
     <div lang="x-desktop" class="desktop-buttons">
@@ -244,5 +264,10 @@
         </tbody>
       </table>
     </div>
+    <div class="regards-text">
+      Regards,<br/>
+      The PYLOT team
+    </div>
+  </div>
 </body>
 </html>
